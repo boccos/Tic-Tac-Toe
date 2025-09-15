@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3vw;
+    margin-bottom: 3vw;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(3, 12vw);
+    gap: 2vw;
+}
+
+.cell {
+    width: 12vw;
+    height: 12vw;
+    font-size: 5vw;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #444;
+}
+
+#gameResult {
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+
+button.restart {
+    margin-top: 2vw;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
