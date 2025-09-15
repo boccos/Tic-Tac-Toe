@@ -53,10 +53,18 @@ button.restart {
     color: white;
     cursor: pointer;
 }
+button {
+  transition: transform 0.2s ease;
+}
+
+button:active {
+  animation: wobble 0.4s;
+}
+
 @keyframes wobble {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(-5deg); }
-  75% { transform: rotate(5deg); }
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(5deg); }
+  50%  { transform: rotate(-5deg); }
+  75%  { transform: rotate(5deg); }
   100% { transform: rotate(0deg); }
 }
