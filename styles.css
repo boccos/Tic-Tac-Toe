@@ -57,7 +57,7 @@ button {
   transition: transform 0.2s ease;
 }
 
-button:active {
+button:hover {
   animation: wobble 0.4s;
 }
 
